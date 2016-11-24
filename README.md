@@ -4,11 +4,13 @@ simulation for MIPS
 __Module List :__
 ---
 Piyarach :
-  * ALU
-  * ALUControl
-  * ADD
-  * SUBTRACT
-  * SLT
+| MODULE      | FINISH | TEST | LINK FILE TEST |
+|-------------|--------|------|----------------|
+|  ALU        | [ ]    | [ ]  |                |             
+|  ALUControl | [x]    | [x]  |                |
+|  ADD        | [x]    | [x]  |                |
+|  SUBTRACT   | [x]    | [x]  |                |
+|  SLT        | [x]    | [x]  |                |
   
 Wirod :
   * Control
