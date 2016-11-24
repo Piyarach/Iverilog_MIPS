@@ -36,3 +36,20 @@ Sitthisak :
   LW , SW                        |        |      |                
   Sign Extend                    |        |      |  
   
+  ---
+  
+  __FOR UPLOAD FILES :__
+  * Upload modules files to folder "src"
+  * Upload test_bench files and output files to folder "test-bench"
+  * For output files please enter file's name like "output_(module_name)"
+  
+---
+ __FOR RUN OUTPUT :__
+  1. Goto folder "test-bench" and looking for file that has foreword like "output_(module_name)" , OR click link via table in "LINK FILE TEST" column.
+  2. Copy output file to your folder.
+  3. Run Command Prompt (cmd) and go to your files' folder.
+  4. Input command " vvp (output_file) " 
+
+_Example :_ `C:\iverilog\test_bench\vvp output_adder`
+  
+---
