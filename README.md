@@ -9,7 +9,7 @@ Piyarach :
  MODULE      | FINISH | TEST | LINK FILE TEST 
 -------------|--------|------|---------------
   ALU        |        |      |                             
-  ALUControl | YES    | YES  |                
+  ALUControl | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/src/adder_32_bit.v)    | YES  |                
   ADD        | YES    | YES  |                
   SUBTRACT   | YES    | YES  |                
   SLT        | YES    | YES  |                
