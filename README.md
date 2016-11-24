@@ -45,7 +45,7 @@ Sitthisak :
   
 ---
  __FOR RUN OUTPUT :__
-  1. Goto folder "test-bench" and looking for file that has foreword like "output_(module_name)" , OR click link via table in "LINK FILE TEST" column.
+  1. Go to folder "test-bench" and looking for file that has foreword like "output_(module_name)" , OR click link via table in "LINK FILE TEST" column.
   2. Copy output file to your folder.
   3. Run Command Prompt (cmd) and go to your files' folder.
   4. Input command " vvp (output_file) " 
