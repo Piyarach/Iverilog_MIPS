@@ -9,10 +9,10 @@ Piyarach :
  MODULE      | FINISH | TEST | LINK FILE TEST 
 -------------|--------|------|---------------
   ALU        |        |      |                             
-  ALUControl | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/src/adder_32_bit.v)    | YES  |                
-  ADD        | YES    | YES  |                
-  SUBTRACT   | YES    | YES  |                
-  SLT        | YES    | YES  |                
+  ALUControl | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/src/aluControl.v)  | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-bench/aluControl_tb.v)  |                
+  ADD        | [YES]((https://github.com/Piyarach/Iverilog_MIPS/blob/master/src/adder_32_bit.v)  )    | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-bench/adder_32_tb.v)  |                
+  SUBTRACT   | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/src/subtract_32_bit.v)    | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-bench/subtract_32_bit_tb.v)  |                
+  SLT        | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/src/slt_32_bit.v)    | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-bench/slt_32_bit_tb.v)  |                
   
 Wirod :
 
