@@ -43,7 +43,9 @@ Sitthisak :
   * Upload test_bench files and output files to folder "test-bench"
   * For output files (build file ) please enter file's name like "output_(module_name)"
   * For output result , Upload to folder test-result. ( Can be image or text file )
+  
 ---
+
  __FOR RUN OUTPUT :__
   1. Go to folder "test-bench" and looking for file that has foreword like "output_(module_name)" , OR click link via table in "LINK FILE TEST" column.
   2. Copy output file to your folder.
