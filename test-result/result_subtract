@@ -1,0 +1,6 @@
+a = 0  , b = 0  , sum = 0   , cout = 1
+a = 7  , b = 6  , sum = 1   , cout = 1
+a = -7 , b = 6  , sum = -13 , cout = 1
+a = -7 , b = -6 , sum = -1  , cout = 0
+a = 6  , b = 7  , sum = -1  , cout = 1
+a = 32 , b = 16 , sum = 16  , cout = 1
