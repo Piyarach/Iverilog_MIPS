@@ -1,0 +1,11 @@
+aluOp = 00 , fuct_field = 000000 , aluCode = 0010
+aluOp = 01 , fuct_field = 000000 , aluCode = 0110
+aluOp = 10 , fuct_field = 100000 , aluCode = 0010
+aluOp = 10 , fuct_field = 100010 , aluCode = 0110
+aluOp = 10 , fuct_field = 100100 , aluCode = 0000
+aluOp = 10 , fuct_field = 100101 , aluCode = 0001
+aluOp = 10 , fuct_field = 101010 , aluCode = 0111
+
+aluOp = 11 , fuct_field = 101010 , aluCode = 0111 , Error in ALUOp
+
+aluOp = 10 , fuct_field = 111111 , aluCode = 0111 , Error in fuct_field
