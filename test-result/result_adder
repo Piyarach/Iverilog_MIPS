@@ -1,0 +1,6 @@
+a = 0   , b = 0  , sum = 0   , cout = 0
+a = 5   , b = 9  , sum = 14  , cout = 0
+a = 16  , b = 32 , sum = 48  , cout = 0
+a = 128 , b = 64 , sum = 192 , cout = 0
+a = -64 , b = 64 , sum = 0   , cout = 1
+a = -64 , b = 96 , sum = 32  , cout = 1
