@@ -1,0 +1,7 @@
+a = 7  , b = 6  , result = 0
+a = -7 , b = 6  , result = 1
+a = -7 , b = -6 , result = 1
+a = 6  , b = 7  , result = 1
+a = -6 , b = -7 , result = 0
+a = 7  , b = 7  , result = 0
+a = 8  , b = 48 , result = 1
