@@ -32,7 +32,7 @@ Sitthisak :
 ---------------------------------|--------|------|--------------- | ------------------
   CPU                            |        |      |                |                             
   Register                       | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/src/Register.v)       | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-bench/Register_tb.v)     |                |                
-  Memory ( Instruction , Data )  |        |      |                |                
+  Memory ( Instruction , Data )  | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/src/Instruction_Memory.v)       | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-bench/Instruction_Memory_tb.v) | [link](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-bench/out_Is_mem) | [link](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-result/result_is_mem)                
   LW , SW                        |        |      |                |                
   Sign Extend                    | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/src/Sign_Extend.v)       | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-bench/Sign_Extend_tb.v)     |                |  
   
