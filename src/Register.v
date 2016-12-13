@@ -10,47 +10,49 @@ module Register(ReadRegister1,ReadRegister2,WriteRegiter,RegWrite,WriteData,Read
 	
 	reg [0:31][31:0] memoryInReg;
 	
-	always @ (RegWrite)
+	always @ ( posedge RegWrite)
 	begin
 		case(WriteRegiter) 
-			5'b00000 : memoryInReg[1] <= WriteData;
-			5'b00001 : memoryInReg[2] <= WriteData;
-			5'b00010 : memoryInReg[2] <= WriteData;
-			5'b00011 : memoryInReg[3] <= WriteData;
-			5'b00100 : memoryInReg[4] <= WriteData;
-			5'b00101 : memoryInReg[5] <= WriteData;
-			5'b00110 : memoryInReg[6] <= WriteData;
-			5'b00111 : memoryInReg[7] <= WriteData;
-			5'b01000 : memoryInReg[8] <= WriteData;
-			5'b01001 : memoryInReg[9] <= WriteData;
-			5'b01010 : memoryInReg[10] <= WriteData;
-			5'b01011 : memoryInReg[11] <= WriteData;
-			5'b01100 : memoryInReg[12] <= WriteData;
-			5'b01101 : memoryInReg[13] <= WriteData;
-			5'b01110 : memoryInReg[14] <= WriteData;
-			5'b01111 : memoryInReg[15] <= WriteData;
-			5'b10000 : memoryInReg[16] <= WriteData;
-			5'b10001 : memoryInReg[17] <= WriteData;
-			5'b10010 : memoryInReg[18] <= WriteData;
-			5'b10011 : memoryInReg[19] <= WriteData;
-			5'b10100 : memoryInReg[20] <= WriteData;
-			5'b10101 : memoryInReg[21] <= WriteData;
-			5'b10110 : memoryInReg[22] <= WriteData;
-			5'b10111 : memoryInReg[23] <= WriteData;
-			5'b11000 : memoryInReg[24] <= WriteData;
-			5'b11001 : memoryInReg[25] <= WriteData;
-			5'b11010 : memoryInReg[26] <= WriteData;
-			5'b11011 : memoryInReg[27] <= WriteData;
-			5'b11100 : memoryInReg[28] <= WriteData;
-			5'b11101 : memoryInReg[29] <= WriteData;
-			5'b11110 : memoryInReg[30] <= WriteData;
-			5'b11111 : memoryInReg[31] <= WriteData;
-		endcase 
+			5'b00000 : memoryInReg[0] = WriteData;
+			5'b00001 : memoryInReg[1] = WriteData;
+			5'b00010 : memoryInReg[2] = WriteData;
+			5'b00011 : memoryInReg[3] = WriteData;
+			5'b00100 : memoryInReg[4] = WriteData;
+			5'b00101 : memoryInReg[5] = WriteData;
+			5'b00110 : memoryInReg[6] = WriteData;
+			5'b00111 : memoryInReg[7] = WriteData;
+			5'b01000 : memoryInReg[8] = WriteData;
+			5'b01001 : memoryInReg[9] = WriteData;
+			5'b01010 : memoryInReg[10] = WriteData;
+			5'b01011 : memoryInReg[11] = WriteData;
+			5'b01100 : memoryInReg[12] = WriteData;
+			5'b01101 : memoryInReg[13] = WriteData;
+			5'b01110 : memoryInReg[14] = WriteData;
+			5'b01111 : memoryInReg[15] = WriteData;
+			5'b10000 : memoryInReg[16] = WriteData;
+			5'b10001 : memoryInReg[17] = WriteData;
+			5'b10010 : memoryInReg[18] = WriteData;
+			5'b10011 : memoryInReg[19] = WriteData;
+			5'b10100 : memoryInReg[20] = WriteData;
+			5'b10101 : memoryInReg[21] = WriteData;
+			5'b10110 : memoryInReg[22] = WriteData;
+			5'b10111 : memoryInReg[23] = WriteData;
+			5'b11000 : memoryInReg[24] = WriteData;
+			5'b11001 : memoryInReg[25] = WriteData;
+			5'b11010 : memoryInReg[26] = WriteData;
+			5'b11011 : memoryInReg[27] = WriteData;
+			5'b11100 : memoryInReg[28] = WriteData;
+			5'b11101 : memoryInReg[29] = WriteData;
+			5'b11110 : memoryInReg[30] = WriteData;
+			5'b11111 : memoryInReg[31] = WriteData;
+		endcase
+		ReadData1 = 32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx;
+		ReadData2 = 32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx;
 	end
 	
-	always @ (RegWrite == 0)
+	always @(RegWrite == 0)
 	begin
-		casex (ReadRegister1)
+		case (ReadRegister1)
 			5'b00000 : ReadData1 = memoryInReg[0];
 			5'b00001 : ReadData1 = memoryInReg[1];
 			5'b00010 : ReadData1 = memoryInReg[2];
@@ -84,7 +86,7 @@ module Register(ReadRegister1,ReadRegister2,WriteRegiter,RegWrite,WriteData,Read
 			5'b11110 : ReadData1 = memoryInReg[30];
 			5'b11111 : ReadData1 = memoryInReg[31];
 		endcase
-		casex (ReadRegister2)
+		case (ReadRegister2)
 			5'b00000 : ReadData2 = memoryInReg[0];
 			5'b00001 : ReadData2 = memoryInReg[1];
 			5'b00010 : ReadData2 = memoryInReg[2];
