@@ -8,7 +8,7 @@ Piyarach :
 
  MODULE      | FINISH | TEST | LINK FILE TEST | LINK OUTPUT RESULT
 -------------|--------|------|--------------- | ------------------
-  ALU        |        |      |                |             
+  ALU        | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/src/alu_32_bit.v)       | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-bench/alu_tb.v)     |   [link](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-bench/output_alu)             |   [link](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-result/result_alu)          
   ALUControl | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/src/aluControl.v)  | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-bench/aluControl_tb.v)  | [link](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-bench/output_aluControl)  | [link](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-result/result_aluControl)            
   ADD        | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/src/adder_32_bit.v)   | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-bench/adder_32_tb.v)  | [link](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-bench/output_adder)  | [link](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-result/result_adder)             
   SUBTRACT   | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/src/subtract_32_bit.v)    | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-bench/subtract_32_bit_tb.v)  | [link](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-bench/output_subtract) | [link](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-result/result_subtract)              
