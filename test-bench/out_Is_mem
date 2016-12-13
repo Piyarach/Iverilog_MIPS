@@ -1,0 +1,67 @@
+#! c:/iverilog-x64/bin/vvp
+:ivl_version "10.1 (stable)" "(v10_1_1)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_00000000000eb970 .scope module, "Instruction_Memory_tb" "Instruction_Memory_tb" 2 1;
+ .timescale 0 0;
+v0000000002639710_0 .var "IS", 31 0;
+v0000000002690230_0 .net "IS_15_0", 15 0, L_0000000002690050;  1 drivers
+v00000000026909b0_0 .net "IS_20_16", 4 0, L_0000000002690c30;  1 drivers
+v0000000002690cd0_0 .net "IS_25_21", 4 0, L_0000000002690730;  1 drivers
+v0000000002690a50_0 .net "IS_31_26", 5 0, L_00000000026904b0;  1 drivers
+v0000000002690d70_0 .net "IS_5_0", 5 0, L_0000000002690690;  1 drivers
+S_00000000000ebaf0 .scope module, "memIS1" "Instruction_Memory" 2 7, 3 1 0, S_00000000000eb970;
+ .timescale 0 0;
+    .port_info 0 /INPUT 32 "IS"
+    .port_info 1 /OUTPUT 6 "IS_5_0"
+    .port_info 2 /OUTPUT 16 "IS_15_0"
+    .port_info 3 /OUTPUT 5 "IS_20_16"
+    .port_info 4 /OUTPUT 5 "IS_25_21"
+    .port_info 5 /OUTPUT 6 "IS_31_26"
+v00000000000ebc70_0 .net "IS", 31 0, v0000000002639710_0;  1 drivers
+v000000000263b0f0_0 .net "IS_15_0", 15 0, L_0000000002690050;  alias, 1 drivers
+v000000000263a620_0 .net "IS_20_16", 4 0, L_0000000002690c30;  alias, 1 drivers
+v000000000263a460_0 .net "IS_25_21", 4 0, L_0000000002690730;  alias, 1 drivers
+v000000000263a2a0_0 .net "IS_31_26", 5 0, L_00000000026904b0;  alias, 1 drivers
+v000000000263a0e0_0 .net "IS_5_0", 5 0, L_0000000002690690;  alias, 1 drivers
+L_0000000002690050 .part v0000000002639710_0, 0, 16;
+L_0000000002690690 .part v0000000002639710_0, 0, 6;
+L_0000000002690c30 .part v0000000002639710_0, 16, 5;
+L_0000000002690730 .part v0000000002639710_0, 21, 5;
+L_00000000026904b0 .part v0000000002639710_0, 26, 6;
+    .scope S_00000000000eb970;
+T_0 ;
+    %delay 1, 0;
+    %pushi/vec4 536870912, 0, 32;
+    %store/vec4 v0000000002639710_0, 0, 32;
+    %delay 1, 0;
+    %vpi_call 2 11 "$display", "addi $0, $0, 0 \011 %b \011 %b \011 %b \011 %b \011 %b \011 %b", v0000000002639710_0, v0000000002690230_0, v0000000002690d70_0, v00000000026909b0_0, v0000000002690cd0_0, v0000000002690a50_0 {0 0 0};
+    %delay 1, 0;
+    %pushi/vec4 539033601, 0, 32;
+    %store/vec4 v0000000002639710_0, 0, 32;
+    %delay 1, 0;
+    %vpi_call 2 13 "$display", "addi $1, $1, 1 \011 %b \011 %b \011 %b \011 %b \011 %b \011 %b", v0000000002639710_0, v0000000002690230_0, v0000000002690d70_0, v00000000026909b0_0, v0000000002690cd0_0, v0000000002690a50_0 {0 0 0};
+    %delay 1, 0;
+    %pushi/vec4 541196290, 0, 32;
+    %store/vec4 v0000000002639710_0, 0, 32;
+    %delay 1, 0;
+    %vpi_call 2 15 "$display", "addi $2, $2, 2 \011 %b \011 %b \011 %b \011 %b \011 %b \011 %b", v0000000002639710_0, v0000000002690230_0, v0000000002690d70_0, v00000000026909b0_0, v0000000002690cd0_0, v0000000002690a50_0 {0 0 0};
+    %delay 1, 0;
+    %pushi/vec4 543358979, 0, 32;
+    %store/vec4 v0000000002639710_0, 0, 32;
+    %delay 1, 0;
+    %vpi_call 2 17 "$display", "addi $3, $3, 3 \011 %b \011 %b \011 %b \011 %b \011 %b \011 %b", v0000000002639710_0, v0000000002690230_0, v0000000002690d70_0, v00000000026909b0_0, v0000000002690cd0_0, v0000000002690a50_0 {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 18 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "Instruction_Memory_tb.v";
+    "Instruction_Memory.v";
