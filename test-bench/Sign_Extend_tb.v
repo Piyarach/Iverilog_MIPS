@@ -1,4 +1,3 @@
-`include "Sign_Extend.v"
 module Sign_Extend_tb;
 	
 	reg [15:0] in;
