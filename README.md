@@ -34,7 +34,7 @@ Sitthisak :
   Register                       |        |      |                |                
   Memory ( Instruction , Data )  |        |      |                |                
   LW , SW                        |        |      |                |                
-  Sign Extend                    |        |      |                |  
+  Sign Extend                    | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/src/Sign_Extend.v)       | [YES](https://github.com/Piyarach/Iverilog_MIPS/blob/master/test-bench/Sign_Extend_tb.v)     |                |  
   
   ---
   
