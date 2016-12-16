@@ -1,0 +1,29 @@
+//Module Test AND Gate
+//Coding By Mr.Wirod Shusong 59063204
+
+module and_gate_tb;
+	reg 	ina, inb;
+	wire 	out;
+	
+	//display
+	initial
+		$monitor("ina = %b, inb = %b, out = %b", ina, inb, out);
+		
+	initial
+		begin
+				#0		ina = 1'b0;
+						inb = 1'b0;
+				#10		ina = 1'b0;
+						inb = 1'b1;
+				#10		ina = 1'b1;
+						inb = 1'b0;
+				#10		ina = 1'b1;
+						inb = 1'b1;
+				#10		$stop;
+		end
+	and_gate inst1(
+						.ina(ina),
+						.inb(inb),
+						.out(out)
+					);
+endmodule

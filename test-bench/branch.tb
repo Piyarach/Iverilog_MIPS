@@ -1,0 +1,29 @@
+//Module Test Branch by AND Gate
+//Coding By Mr.Wirod Shusong 59063204
+
+module branch_tb;
+	reg 	ina, inb;
+	wire 	out;
+	
+	//display
+	initial
+		$monitor("ina = %b, inb = %b, out = %b", ina, inb, out);
+		
+	initial
+		begin
+				#0		ina = 1'b0;
+						inb = 1'b0;
+				#10		ina = 1'b0;
+						inb = 1'b1;
+				#10		ina = 1'b1;
+						inb = 1'b0;
+				#10		ina = 1'b1;
+						inb = 1'b1;
+				#10		$stop;
+		end
+	branch inst1(
+						.ina(ina),
+						.inb(inb),
+						.out(out)
+					);
+endmodule
