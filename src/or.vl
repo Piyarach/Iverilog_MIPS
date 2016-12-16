@@ -1,0 +1,13 @@
+//Module OR Gate
+//Coding By Mr.Wirod Shusong 59063204
+
+module or_gate(ina,inb,out);
+	input 	ina, inb;	
+	output 	out;	
+	
+	wire 	ina, inb;
+	wire	out;
+	
+	assign 	out = ina | inb;		
+	
+endmodule
